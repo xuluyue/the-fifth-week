@@ -1,12 +1,5 @@
 ﻿### 创建项目预热：
 
-> 创建仓库 生成/添加公匙 克隆到本地
-创建项目：<br/>
-vue init webpack 项目名称（set up unit tests(No) Setup e2e tests with Nightwatch? (n)）<br/>
-test （no）<br/>
-cd 项目名称<br/>
-npm run dev(让项目跑起来)<br/>
-
 > 关于git上传代码：<br/>
 git init <br/>
 git commit -am '相关信息'<br/>
@@ -47,7 +40,6 @@ git checkout 分支名字<br/>
 git branch --set-upstream-to master(建立本地仓库对于远程仓库的追踪)<br/>
 git push origin 分支名字:分支名字（将本地分支传到上面去）<br/>
 
-https://blog.csdn.net/boysky0015/article/details/78185879<br/>
 > git add .<br/>
 git commit <br/>
 git push -u origin 分支的名字<br/>
@@ -59,9 +51,4 @@ git status<br/>
 > git add .<br/>
 git commit --m（必须加上注释）<br/>
 git push origin 分支名字<br/>
-
-> 删除vue的node_modle<br/>
-rm -f /node_modules<br/>
-rimraf node_modules<br/>
-
 
