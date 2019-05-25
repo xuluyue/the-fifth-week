@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+	
+<style type="text/css">
+*{
+	margin: 0;
+	padding:0；
+}
+.body{
+	font-family:  Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial;
+}
+.header{
+	height: 25vh;
+}
+.sousuo{
+	text-align: center;
+	font-size: 4vh;
+	padding:2.5vh 0;
+	font-weight: bold;
+}
+.button{
+	background-color: blue;
+	border-style: none;
+}
+.form{
+	text-align: center;
+	padding-bottom: 2vh;
+	line-height: 4vh;
+}
+.form1{
+	font-size: 2vh;
+    background-color: #E6E6FA;
+    opacity: 0.5;
+    border-radius: 2em;
+    border-color: #E6E6FA;
+    width: 28vh;
+    line-height: 4vh
+}
+.button{
+	background-color: darkturquoise;
+    border: none;
+    border-radius: 2em;
+    font-size: 2.4vh;
+    line-height: 4vh;
+    color: white;
+    width: 8vh;
+}
+.line{
+	opacity: 0.5;
+	width: 100%;
+	
+}
+.yy{
+	height: 10vh;
+}
+.sort{
+	list-style: none;
+	/*padding: 2vh 0;*/
+	/*height: 3vh;*/
+}
+.finding{
+	width: 32.2%;
+	/*height: 5vh;*/
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 2.5;
+}
+#drop-down{
+	position: relative;
+}
+#drop-down-content{
+	padding: 0;
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: white;
+}
+.contents{
+	text-align: center;
+	width: 100%;
+}
+.contents1{
+	text-align: center;
+	width: 50%;
+	display: block;
+	float: left;
+
+}
+.contents3{
+	width: 50%;
+	display: block;
+	float: left;
+}
+.sort #drop-down:hover #drop-down-content{
+	display: block;
+	
+}
+#drop-down-content hr{
+	opacity: 0.5;
+}
+.sort .finding:hover .bottom{
+	background-color: gray;
+	display: block;
+}
+#drop-down-content li:hover a{ 
+	color:#7FFFD4;
+   
+}
+.content{
+	height: 105vh;
+}
+.divide{
+	display: block;
+    float: left;
+    opacity: 0.5;
+    font-size: 3.5vh;
+    color: gray;
+}
+.finding span{
+	/*text-align: center;*/
+	display: block;
+	color: gray;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+.transverse{
+	margin: 2vh 2vh;
+    clear: both;
+    height: 22vh;
+}
+.total{
+
+	height:22vh;
+}
+.imfomation{
+	display: block;
+	float: left;
+	width: 40%;
+}
+.imfomation1{
+    width: 60%;
+    display: block;
+    float: left;
+}
+.img{
+	width: 80%;
+	height: 22vh;
+}
+.type{
+	display: block;
+	float: left;
+	background:#00CED1;
+	border-radius: 0.4em;
+}
+li.date{
+    display: block;
+    float: right;
+}
+.location{
+	display: block;
+	text-align: center;
+
+}
+.location,.type,.date span{
+	font-size: small;
+}
+.most-imfomation{
+	width:100%;
+}
+.communication{
+	font-size: 2.3vh;
+    font-weight: bold;
+}
+li.picture{
+	display: block;
+	float: left;
+	padding-top: 2vh;
+}
+li.data1 {
+    font-size: 0.2vh;
+    display: block;
+    float: right;
+    padding-top: 2vh;
+}
+.bottom{
+	
+	height: 13.5vh;
+
+	position:fixed;
+	bottom: 0;
+	background-color: white;
+    width: 100%;
+}
+.last{
+	display: block;
+	float: left;
+	
+	width: 20%;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+li.bottom1245{
+	padding:5vh 0;
+}
+.bottom span{
+	display: block;
+	text-align: center;
+}
+.photo{
+    width: 5vh;
+    height: 5vh;
+    display: block;
+    margin: 0 auto;
+}
+.photo1{
+	width: 10vh; 
+	height: 10vh;
+	display: block;
+    margin: 0 auto;
+}
+.yyyy{
+	width: 95%;
+	height: 25vh;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<p class="sousuo">搜索</p>
+		<div class="form">
+		 <input type="text" class="form1" placeholder="雨伞">
+                <button class="button">搜索</button>
+        </div>
+        
+        	
+        	<div class="yy">
+        	<hr class="line">
+        	<ul class="sort">
+        		<li class="finding" id="drop-down">
+        			<a href="#">启示类型</a>
+        			<ul id="drop-down-content">
+        				<li class="contents"><a href="">不限</a></li>
+        				<hr>
+        				<li class="contents"><a href="">失物</a></li>
+        				<hr>
+        				<li class="contents"><a href="">招领</a></li>
+        			</ul>
+        			
+        		</li>
+        		<span class="divide">|</span>
+        		<li class="finding" id="drop-down">
+        			<a href="#">丢失地点</a>
+        			<ul id="drop-down-content">
+        				<li class="contents"><a href="">不限</a></li>
+        				<hr>
+        				<li class="contents"><a href="">一教</a></li>
+        				<hr>
+        				<li class="contents"><a href="">二教</a></li>
+        				<hr>
+        				<li class="contents"><a href="">三教</a></li>
+        				<hr>
+        				<li class="contents"><a href="">四教</a></li>
+        				<hr>
+        				<li class="contents"><a href="">五教</a></li>
+        				<hr>
+        				<li class="contents"><a href="">八教</a></li>
+
+        			</ul>
+        		</li>
+        		<span class="divide">|</span>
+        		<li class="finding" id="drop-down">
+        			<a href="#">物品类型</a>
+        			<ul id="drop-down-content">
+        				<li class="contents3"><a href="">不限</a></li>
+        				
+        				<li class="contents3"><a href="">钥匙</a></li>
+        				<hr>
+        				<li class="contents3"><a href="">钱包</a></li>
+        				
+        				<li class="contents3"><a href="">证件</a></li>
+        				<hr>
+        				<li class="contents3"><a href="">U盘</a></li>
+        				
+        				<li class="contents3"><a href="">书籍</a></li>
+        				<hr>
+        				<li class="contents3"><a href="">文具</a></li>
+        				
+        				<li class="contents3"><a href="">雨具</a></li>
+        			</ul>
+        			
+        		</li>
+        	</ul>
+        	<hr class="line">
+        	</div>
+	</div>
+	<div class="content">
+		<ul>
+			<li class="transverse">
+				<ul class="total">
+					<li class="imfomation"><img src="1.JPG" class="img" border-radius: 0.5em"></li>
+					<li class="imfomation1">
+						<ul class="most-imfomation">
+							<li class="type">
+							<span>手链</span>
+						    </li>
+						    <li class="date">
+							<span>11月18日20:55</span>
+						    </li>
+						    <li class="location"><span>数字图书馆</span></li>
+						    <br>
+						    <span class="communication">我在三教丢了一个手链</span>
+						    <br>
+						    <br>
+						    <hr class="line1">
+						    <li class="picture">
+							<img src="3.JPG" style="width: 6vh;height: 6vh">
+						   </li>
+						   <li class="data1"><span>2018//11//11发布</span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="transverse">
+				<ul class="total">
+					<li class="imfomation"><img src="1.JPG" class="img" border-radius: 0.5em"></li>
+					<li class="imfomation1">
+						<ul class="most-imfomation">
+							<li class="type">
+							<span>U盘</span>
+						    </li>
+						    <li class="date">
+							<span>11月18日20:55</span>
+						    </li>
+						    <li class="location"><span>千喜鹤</span></li>
+						    <br>
+						    <span class="communication">本人丢失了一个U盘</span>
+						    <br>
+						    <br>
+						    <hr class="line1">
+						    <li class="picture">
+							<img src="8.JPG" style="width: 6vh;height: 6vh">
+						   </li>
+						   <li class="data1"><span>2018//11//18发布</span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="transverse">
+				<ul class="total">
+					<li class="imfomation"><img src="5.JPG" class="img" border-radius: 0.5em"></li>
+					<li class="imfomation1">
+						<ul class="most-imfomation">
+							<li class="type">
+							<span>卡</span>
+						    </li>
+						    <li class="date">
+							<span>11月18日20:00</span>
+						    </li>
+						    <li class="location"><span>千喜鹤</span></li>
+						    <br>
+						    <span class="communication">学校发的银行卡丢了 嘤嘤</span>
+						    <br>
+						    <br>
+						    <hr class="line1">
+						    <li class="picture">
+							<img src="6.JPG" style="width: 6vh;height: 6vh">
+						   </li>
+						   <li class="data1"><span>2018//11//18发布</span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="transverse">
+				<ul class="total">
+					<li class="imfomation"><img src="7.JPG" class="img" border-radius: 0.5em"></li>
+					<li class="imfomation1">
+						<ul class="most-imfomation">
+							<li class="type">
+							<span>U盘</span>
+						    </li>
+						    <li class="date">
+							<span>11月18日20:55</span>
+						    </li>
+						    <li class="location"><span>数字图书馆</span></li>
+						    <br>
+						    <span class="communication">U盘丢了</span>
+						    <br>
+						    <br>
+						    <hr class="line1">
+						    <li class="picture">
+							<img src="4.JPG" style="width: 6vh;height: 6vh">
+						   </li>
+						   <li class="data1"><span>2018//11//15发布</span></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="bottom">
+		<ul>
+			<li class="last bottom1245">
+				<a href="file:///C:/Users/DELL/Desktop/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF.HTML"><img src="shouye.PNG" class="photo">
+				<span>首页</span></a>
+			</li>
+			<li class="last bottom1245">
+				<a href="file:///C:/Users/DELL/Desktop/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E6%90%9C%E7%B4%A2.html"><img src="搜索.PNG"  class="photo"><span>搜索</span></a>
+			</li>
+			<li class="last">
+				<a href=""><img src="发布.PNG" class="photo1"><span>发布</span></a>
+			</li>
+			<li class="last bottom1245">
+				<a href=""><img src="消息.PNG"  class="photo"><span>消息</span></a>
+			</li>
+			<li class="last bottom1245">
+				<a href=""><img src="我的.PNG"  class="photo"><span>我的</span></a>
+			</li>
+		</ul>
+	</div>
+	 <script type="text/javascript">
+	 	var btn=document.getElementById("drop-down-content");
+	 	var allA=btn.getElementsByTagName("li");
+	 	var a=allA.length;
+	 	btn.onclick=function(){
+            btn.style.height=a*20+"vh";
+          
+	 	}
+	 </script>
+</body>
+</html>
