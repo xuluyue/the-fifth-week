@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0；
+}
+body{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.background{
+	background: url(qf3cu.jpg) center no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+#body{
+	background: rgba(0,0,0,.5);
+    opacity: 0.75;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.header{
+	height: 64px;
+	width: 100%;
+	position: relative;
+}
+#navigation{
+	width: 80px;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+.top{
+	position: relative;
+	margin-right: 40px;
+	margin-left: 80px;
+	height: 100%;
+	line-height: 64px;
+}
+.navigation-button{
+	position: absolute;
+	height: 48px;
+	width: 48px;
+	margin: 8px 12px;
+}
+#button{
+	position: absolute;
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+img{
+	display: block;
+    height: 24px;
+    width: 24px;
+    margin: 12px auto;
+}
+.top{
+	
+}
+.title{
+	font-size: 20px;
+    color: white;
+    display: block;
+    position: relative;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    letter-spacing: .02em;
+    font-weight: 400;
+    float: left;
+}
+.nav{
+	height: 100%;
+    position: relative;
+    float: right;
+    font-size: 14px;
+}
+.nav-detail{
+	padding: 0 24px;
+    height: 100%;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+    opacity: 0.85;
+}
+#hidden{
+	position: fixed;
+	height: 100%;
+	width: 239px;
+	background-color: white;
+	border-color: white;
+	z-index: 2;
+	display:none;
+	transition: width 2s;
+	top: 0;
+}
+.first{
+	line-height: 64px;
+    padding-left: 40px;
+    position: relative;
+    display: block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    letter-spacing: .02em;
+	color: #424242;
+	font-size: 20px;
+}
+.hid-navigation{
+	padding-top: 16px;
+	width: 100%;
+	text-decoration: none;
+	display: block;
+}
+.seccond-nav{
+    padding: 16px 40px;
+    text-decoration: none;
+    display: block;
+    color:#424242;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+.seccond-nav:hover{
+	background-color:gray;
+	opacity: 0.1;
+	z-index: -88;
+	overflow: hidden;
+}
+.content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.hitokoto-fullpage{
+	margin-left: auto;
+    margin-right: auto;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, Arial, sans-serif;
+    color: white;
+    font-size: 2.3rem;
+    position: relative;
+    text-align: center;
+    width: 55%;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+    animation:dong 0.5s;
+}
+@keyframes dong{
+				0%{}
+				45%{transform: translateY(-50px)}
+				70%{transform: translateY(0px)}
+				85%{transform: translateY(-15px)}
+				100%{}
+			}
+.words{
+	padding: 15px 40px;
+	line-height: 50px;
+	word-break: normal;
+	margin: 0;
+
+}
+span.bracket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+}
+span.bracket1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 30px;
+}
+.footer{
+	font-size: 13.5px;
+    right: 3px;
+    position: fixed;
+    bottom: 4px;
+    color: white;
+}
+</style>
+</head>
+<body>
+	<div class="background"></div>
+	<div id="body">
+		<div class="header">
+			<div id="navigation">
+				<div class="navigation-button"><i id="button"><img src="导航.png"></i></div>
+			</div>
+			<div class="top">
+				<span class="title">Hitokoto</span>
+				<div class="nav">
+					<a href="" class="nav-detail">xxx</a>
+					<a href="https://hitokoto.cn/api" class="nav-detail">API</a>
+					<a href="https://hitokoto.cn/status" class="nav-detail">状态</a>
+					<a href="https://hitokoto.cn/login" class="nav-detail">登录</a>
+					<a href="https://hitokoto.cn/register" class="nav-detail">戳我添加⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</a>
+					<a href="https://hitokoto.cn/about" class="nav-detail">关于一言....</a>
+				</div>
+			</div>
+		</div>
+		<div id="hidden">
+			<span class="first">Hitokoto</span>
+			<nav class="hid-navigation">
+				<a href="" class="seccond-nav">xxx</a>
+				<a href="" class="seccond-nav">API</a>
+				<a href="" class="seccond-nav">状态</a>
+				<a href="" class="seccond-nav">登录</a>
+				<a href="" class="seccond-nav">想要添加一言？戳我戳我 ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</a>
+				<a href="" class="seccond-nav">关于一言</a>
+				<a href="" class="seccond-nav">暂停</a>
+			</nav>
+		</div>
+		<div class="content">
+		<div class="page-content">
+			<div class="hitokoto-fullpage" >
+				<span class="bracket">『</span>
+				<p class="words" id="hitokoto"></script>
+				</p>
+				<span class="bracket1">』</span>
+			</div>
+		</div>
+		</div>
+		<p class="footer">
+        Copyright © 2018 Moecraft All Rights Reserved.  沪ICP备16031287号-1 Email:i@loli.online QQ群：70029304
+        </p>
+	</div>
+	 <script type="text/javascript">
+	 	var navigation=document.getElementById("navigation");
+	 	navigation.onclick=function(){
+	 		window.event.stopPropagation();
+            hidden.style.display='block';
+            body.style.background='rgba(0.5,0.5,0.5,0.7)'
+            body.style.opacity=1;
+	 	};
+	 	document.addEventListener("click",function(){
+	        body.style.background='rgba(0,0,0,.5)'
+            hidden.style.display="none";
+            body.style.opacity=0.65;
+        });
+	 </script><!-- 
+	 <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script> -->
+	 <script>
+	 	 
+     var xhr = new XMLHttpRequest();
+     xhr.open('get', 'https://v1.hitokoto.cn');
+     xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+      	
+	 	 	
+      var data = JSON.parse(xhr.responseText);
+
+      var hitokoto = document.getElementById('hitokoto');
+
+      hitokoto.innerText = data.hitokoto;
+
+    }
+  }
+  xhr.send();
+ 
+</script>
+
+</body>
+</html>
